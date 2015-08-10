@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interaction</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div onclick="react();" id="target">Hit Me!</div>
+  <script>
+    function react()
+    {
+      var target = document.getElementById('target');
+      target.style.backgroundColor = '#f77';
+      target.style.width = '200px';
+      target.style.padding = '30px';
+      target.style.fontSize = '20px';
+      target.style.marginTop = '75px';
+    }
+  </script>
+</body>
+</html>

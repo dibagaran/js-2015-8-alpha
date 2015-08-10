@@ -1,0 +1,17 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: #248;
+}
+
+div{
+  width: 500px;
+  background: #77f;
+  border-radius: 5px;
+  margin: 100px auto;
+  text-align: center;
+  color: white;
+  padding: 75px;
+  font: normal 48px Arial;
+  transition: all .5s ease;
+}
