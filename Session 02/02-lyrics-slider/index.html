@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lyrics Slider</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div id="slider">
+    <ul id="slides">
+      <li>
+        <div>
+          <div>
+            <h2>Dream On</h2>
+            <h3>Yngwie Malmsteen and Ronnie James Dio </span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            Every time that I look in the mirror<br/>
+            All these lines in my face gettin' clearer<br/>
+            The past is gone<br/>
+            It went by like dust to dawn<br/>
+            Isn't that the way?<br/>
+            Everybody's got their dues in life to pay
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            I know nobody knows<br/>
+            Where it comes and where it goes<br/>
+            I know it's everybody's sin<br/>
+            You got to lose to know how to win
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            Half my life's in books' written pages<br/>
+            Lived and learned from fools and from sages<br/>
+            You know it's true<br/>
+            All these things<br/>
+            Come back to you
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            Sing with me<br/>
+            Sing for the years<br/>
+            Sing for the laughter n' sing for the tears<br/>
+            Sing with me<br/>
+            Just for today
+          </div>
+        </div>
+      </li>
+      <li>
+        <div>
+          <div>
+            Maybe tomorrow the good lord will take you away ...
+          </div>
+        </div>
+      </li>
+    </ul>
+    <span onclick="changeSlide(true);" id="next">Next</span>
+    <span onclick="changeSlide(false);" id="prev">Prev</span>
+  </div>
+  <script>
+    var numberOfSlides = 6, currentSlide = 0;
+    var slides = document.getElementById('slides');
+    function changeSlide(direction)
+    {
+      currentSlide = direction ? currentSlide + 1 : currentSlide - 1;
+      if(direction && currentSlide > numberOfSlides - 1)
+        currentSlide = 0;
+      else if(!direction && currentSlide < 0)
+        currentSlide = numberOfSlides - 1;
+      slides.style.left = (-700 * currentSlide) + 'px';
+    }
+  </script>
+</body>
+</html>

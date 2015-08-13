@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Switch</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div onclick="toggle();" id="toggleSwitch">
+    <span id="handle">OFF</span>
+  </div>
+  <script>
+    var off = true;
+    var toggleSwitch = document.getElementById('toggleSwitch');
+    var handle = document.getElementById('handle');
+    function toggle(){
+      toggleSwitch.style.backgroundColor = off ? '#00b0fe' : '#ccc';
+      handle.style.left = off ? '62px' : '2px';
+      handle.style.color = off ? '#00b0fe' : '#bbb';
+      handle.innerHTML = off ? 'ON' : 'OFF';
+      off = !off;
+    }
+  </script>
+</body>
+</html>

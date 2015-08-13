@@ -1,0 +1,88 @@
+body, h2, h3, div#slider > ul{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #05b;
+  font: normal 18px Arial;
+}
+
+div#slider{
+  width: 640px;
+  height: 360px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: rgba(0,0,0,.3);
+  border: solid 10px white;
+  transition: all .5s ease;
+  box-shadow: 0 0 40px rgba(0,0,0,.5);
+}
+
+div#slider > ul{
+  list-style: none;
+  width: 4200px;
+  position: relative;
+  left: 0;
+  transition: left .5s ease;
+}
+
+div#slider > ul > li{
+  float: left;
+}
+
+div#slider > ul > li > div{
+  width: 700px;
+  line-height: 1.5em;
+}
+
+div#slider > ul > li > div > div{
+  padding: 50px;
+}
+
+div#slider > ul > li > div > div > h2{
+  font-size: 36px;
+  padding: 10px 0;
+  color: #fc0;
+}
+
+div#slider > ul > li > div > div > h3{
+  font-weight: normal;
+  font-size: 22px;
+}
+
+div#slider > span{
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  width: 80px;
+  background: rgba(255,255,255,.1);
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  transition: all .3s ease;
+  text-transform: uppercase;
+}
+
+div#slider > span:hover{
+  color: white;
+  background: rgba(255,255,255,.2);
+}
+
+div#slider > span#next{
+  right: -100px;
+}
+
+div#slider:hover > span#next{
+  right: 0;
+}
+
+div#slider > span#prev{
+  left: -100px;
+}
+
+div#slider:hover > span#prev{
+  left: 0;
+}
