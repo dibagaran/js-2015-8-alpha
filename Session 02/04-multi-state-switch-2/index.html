@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multi-State Switch</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <h2>Click on the monster</h2>
+  <div id="stage">
+    <div id="target" onclick="nextState();">
+    </div>
+  </div>
+  <script>
+    // Add as many coordinates as you want.
+    var states = [[220, 200], [180, 160], [410, 160], [20, 150]];
+    var currentState = 0;
+    
+    var target = document.getElementById('target');
+    var title = document.getElementById('title');
+
+    function nextState(){
+        currentState = (currentState + 1) % states.length;
+        target.style.left = states[currentState][0] + 'px';
+        target.style.top = states[currentState][1] + 'px';
+    }
+  </script>
+</body>
+</html>

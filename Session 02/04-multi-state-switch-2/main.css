@@ -1,0 +1,37 @@
+body, h2{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #225;
+}
+
+h2{
+  text-align: center;
+  padding: 75px 0 10px 0;
+  color: white;
+  font: bold 22px Arial;
+  text-transform: uppercase;
+}
+
+#stage{
+  width: 640px;
+  height: 380px;
+  background: #444 url(images/bg.png) no-repeat center center;
+  position: relative;
+  margin: 0 auto 75px auto;
+  border: solid 10px white;
+  box-shadow: 0 0 40px rgba(0,0,0,.4);
+  border-radius: 5px;
+}
+
+#target{
+  width: 174px;
+  height: 134px;
+  position: absolute;
+  background: url(images/monster.png) no-repeat center center;
+  left: 220px;
+  top: 200px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
