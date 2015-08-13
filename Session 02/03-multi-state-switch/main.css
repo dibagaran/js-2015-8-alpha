@@ -1,0 +1,14 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: #222;
+}
+
+#target{
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  background: #f00;
+  border-radius: 50%;
+  transition: all .2s ease;
+}

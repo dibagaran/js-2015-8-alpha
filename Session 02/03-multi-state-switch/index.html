@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Multi-State Switch</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div id="target" onclick="nextState();"></div>
+  <script>
+    var states = ['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f'];
+    var currentState = 0;
+    var target = document.getElementById('target');
+    function nextState(){
+        currentState = (currentState + 1) % states.length;
+        target.style.backgroundColor = states[currentState];
+    }
+  </script>
+</body>
+</html>
