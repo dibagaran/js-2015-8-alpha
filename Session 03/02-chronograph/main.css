@@ -1,0 +1,95 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#chronograph{
+  width: 201px;
+  height: 201px;
+  margin: 100px auto;
+  border-radius: 50%;
+  position: relative;
+  border: solid 10px black;
+}
+
+#chronograph > #handle{
+  display: block;
+  width: 35px;
+  height: 31px;
+  position: absolute;
+  left: 72px;
+  top: -35px;
+  background: black;
+  border: solid 10px black;
+  border-bottom: none;
+  border-right-color: white;
+  border-left-color: white;
+}
+
+#chronograph > #start-stop, #chronograph > #reset{
+  display: block;
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  background: black;
+  cursor: pointer;
+  border-top: solid 5px red;
+}
+
+#chronograph > #start-stop{
+  right: 0;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#chronograph > #start-stop:active{
+  right: 2px;
+  top: 2px;
+}
+
+#chronograph > #reset{
+  left: 0;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#chronograph > #reset:active{
+  left: 2px;
+  top: 2px;
+}
+
+#chronograph > #second-hand{
+  width: 3px;
+  height: 85px;
+  position: absolute;
+  background: red;
+  left: 99px;
+  top: 15px;
+  -moz-transform-origin: center bottom;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#chronograph > #pin{
+  width: 15px;
+  height: 15px;
+  background: red;
+  position: absolute;
+  left: 93px;
+  top: 93px;
+  border-radius: 50%;
+}
+
+#chronograph > #time{
+  text-align: center;
+  display: block;
+  padding-top: 130px;
+  font: bold 20px 'Courier New';
+  letter-spacing: -2px;
+}
