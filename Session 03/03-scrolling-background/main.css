@@ -1,0 +1,22 @@
+body{
+  padding: 0;
+  margin: 0;
+  background: #222;
+}
+
+#stage{
+  width: 800px;
+  height: 512px;
+  margin: 50px auto;
+  background-image: url(images/stars.gif);
+  background-size: 256px 256px;
+  position: relative;
+  border: solid 10px #111;
+}
+
+#player{
+  width: 100px;
+  position: absolute;
+  left: 350px;
+  bottom: 75px;
+}
