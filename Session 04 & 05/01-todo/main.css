@@ -1,0 +1,8 @@
+body{
+  padding: 50px;
+  margin: 0;
+}
+.done{
+  text-decoration: line-through;
+  color: #999;
+}
