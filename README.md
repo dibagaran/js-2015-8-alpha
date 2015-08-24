@@ -14,6 +14,9 @@
 * [24 Ways - Web Design and Development Articles and Tutorials](http://24ways.org)
 * [Smashing Magazine](http://www.smashingmagazine.com)
 
+### Free Books
+* [50 Free Books for Web Designers & Developers](http://speckyboy.com/2015/01/12/free-web-design-ebooks-2014/)
+
 ### Sandbox:
 * [CodePen](http://codepen.io/)
 * [JSFiddle](https://jsfiddle.net/)
