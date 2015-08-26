@@ -1,0 +1,57 @@
+﻿body, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #111;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#stage {
+    width: 900px;
+    height: 600px;
+    background: #fff url(../images/bg.jpg) no-repeat center center;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px black;
+}
+
+#tank {
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+}
+
+.bullet {
+    width: 10px;
+    height: 1px;
+    background: white;
+    border: solid 1px yellow;
+    box-shadow: 0 0 10px red;
+    position: absolute;
+    border-radius: 1px;
+    left: 0;
+    bottom: 136px;
+}
+
+#stage h3 {
+    padding: 20px;
+    font: 20px Arial;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px yellow, 0 0 10px red, 0 0 15px black;
+    background: rgba(0, 0, 0, .1);
+}
+
+#stage h3 span {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
