@@ -1,0 +1,39 @@
+body, h3{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #55f;
+}
+
+h3{
+  text-transform: uppercase;
+  font: normal 18px Arial;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+
+#target{
+  width: 100px;
+  height: 100px;
+  background: #f5f;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font: normal 14px/100px Arial;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  color: white;
+  transition: opacity, transform .1s ease;
+}
+
+.ghost{
+  opacity: .5;
+  transform: scale(1.1, 1.1);
+}
