@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tree</title>
+	<style>
+	html, body, h2{
+		margin: 0;
+	}
+	canvas{
+		display: block;
+		background: linear-gradient(#3BB9FF 0%, #FFF 80%);
+	}
+	h2{
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		text-align: center;
+		padding: 20px;
+		font: bold 16px/1.5em Arial;
+		text-transform: uppercase;
+		color: #fff;
+		text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+	}
+	</style>
+	<script>
+	window.onload = function() {
+		var canvas = document.getElementById('canvas'),
+			graphics = canvas.getContext('2d'),
+			width = canvas.width = window.innerWidth,
+			height = canvas.height = window.innerHeight;
+		
+		graphics.strokeStyle = '#53350A'
+		graphics.translate(width / 2, height);
+
+		function generateBranch(x1, y1, angle, length){
+			if(length < 15)
+			{
+				graphics.beginPath();
+				graphics.arc(x1, y1, 5, 0, Math.PI * 2);
+				graphics.closePath();
+				graphics.fillStyle = '#800';
+				graphics.fill();
+				return;
+			}
+
+			var radians = angle * Math.PI / 180;
+			var x2 = x1 + Math.cos(radians) * length;
+			var y2 = y1 - Math.sin(radians) * length;
+
+			graphics.beginPath();
+			graphics.moveTo(x1, y1);
+			graphics.lineTo(x2, y2);
+			graphics.lineWidth = length / 10;
+			graphics.stroke();
+
+			generateBranch(x2, y2, angle - (Math.random() * 20 + 20), length * (Math.random() * .15 + .7));
+			generateBranch(x2, y2, angle + (Math.random() * 20 + 20), length * (Math.random() * .15 + .7));
+		}
+		
+		function generateTree(){
+			graphics.clearRect(-width / 2, -height, width, height);
+			generateBranch(0, 0, 90, 150);
+		}
+
+		document.addEventListener('click', function(){
+			generateTree();
+		});
+
+		generateTree();
+	}
+	</script>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<h2>
+		This demo requires a modern web browser to run properly.<br/>
+		Click on this page to regenerate.
+	</h2>
+</body>
+</html>
