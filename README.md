@@ -1,3 +1,5 @@
+## NOTICE: The final project deadline is extended to October 12 (Mehr 20) on condition that you upgrade your project accordingly since you have more time to polish the code. If you're not willing to upgrade and your project is already done you can still submit it on the original deadline.
+
 # JavaScript / August 2015 / Group 1
 
 ### References:
